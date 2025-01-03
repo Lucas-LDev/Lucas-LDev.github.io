@@ -27,7 +27,14 @@ let swiperCards = new Swiper(".certificates-content", {
 const checkbox = document.getElementById("chk");
 checkbox.addEventListener("change", () => {
   document.documentElement.classList.toggle("dark-theme");
+  localStorage.setItem("theme", document.documentElement.classList.contains("dark-theme") ? "dark" : "light");
 });
+
+if (localStorage.getItem("theme") === "dark") {
+  document.documentElement.classList.add("dark-theme");
+  checkbox.checked = true;
+}
+
 
 /*===============SKILLS===============*/
 const skills = [
@@ -131,7 +138,7 @@ const projects = [
     linkImg: "assets/images/demo-projects/portfolio.png",
     context: "Portfólio de projetos pessoais",
     description: "Este site foi criado como parte do meu processo de aprendizado, testes e desafios no desenvolvimento Front-end. Embora o foco principal desse projeto seja o aprendizado, ele também serve para apresentar um pouco sobre mim, compartilhar conhecimentos e habilidades que adquiri ao longo dos estudos em programação, além de mostrar cursos que realizei na área e alguns dos projetos que desenvolvi. O site foi construído utilizando HTML, CSS e JavaScript.",
-    linkGithub: "#"
+    linkGithub: "https://github.com/Lucas-LDev/Lucas-LDev.github.io"
   },
 ]
 
