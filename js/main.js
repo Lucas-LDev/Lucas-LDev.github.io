@@ -140,6 +140,14 @@ const projects = [
     description: "Este site foi criado como parte do meu processo de aprendizado, testes e desafios no desenvolvimento Front-end. Embora o foco principal desse projeto seja o aprendizado, ele também serve para apresentar um pouco sobre mim, compartilhar conhecimentos e habilidades que adquiri ao longo dos estudos em programação, além de mostrar cursos que realizei na área e alguns dos projetos que desenvolvi. O site foi construído utilizando HTML, CSS e JavaScript.",
     linkGithub: "https://github.com/Lucas-LDev/Lucas-LDev.github.io"
   },
+  {
+    name: "Gerenciador de Tarefas: To-Do List Web",
+    linkVideo: "",
+    linkImg: "https://github.com/Lucas-LDev/to-do-list-web/blob/main/assets/demonstration.png?raw=true",
+    context: "Lista de Tarefas Web",
+    description: "Este projeto é um gerenciador de tarefas web que permite adicionar, marcar como concluídas ou excluir tarefas da sua lista. As tarefas são salvas localmente no navegador, garantindo que permaneçam disponíveis mesmo após fechar a página. O site foi desenvolvido utilizando HTML, CSS e JavaScript, e faz uso de conceitos de manipulação de JSON e da funcionalidade localStorage, que é embutida nos navegadores web.",
+    linkGithub: "https://github.com/Lucas-LDev/to-do-list-web"
+  },
 ]
 
 const projectsContainer = document.querySelector(".projects-container");
